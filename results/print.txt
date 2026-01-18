@@ -1,0 +1,95 @@
+你好啊！
+软件名称：代币分析
+Copyright©2026 SONGGUOPENG All rights reserved
+✅ Web3节点连接成功
+本地数据库初始化成功！路径：./bsc_cache
+代币分析初始化完成！
+正在读取持币者Excel文件: D:/Study/SONGGUOPENG.Software/代币分析/export-tokenholders-for-contract-0x99d9f5186d03e55e8857a96a9b4411fe33124e1b.xlsx
+找到 4194 条持币记录
+✅ 成功导入 4194 个持币地址以及余额
+正在读取转账Excel文件: D:/Study/SONGGUOPENG.Software/代币分析/export-token-0x99d9f5186d03e55e8857a96a9b4411fe33124e1b.xlsx
+找到 4289 条转账记录
+✅ 成功导入 4289 条转账记录
+开始分析代币:
+获取代币信息...
+API返回错误: NOTOK
+正在使用web3查询...
+获取创建信息...
+API返回错误: NOTOK
+原始信息：None
+代币信息：TokenInfo(address='0x99D9F5186d03E55e8857A96a9B4411fe33124E1b', name='C language in blockchain', symbol='CLANG', decimals=18, total_supply=10000000000.0, creation_tx='', creation_time=None, lp_pool_address='0x7862D9B4bE2156B15d54F41ee4EDE2d5b0b455e4', price_usd=0.0, market_cap=0.0)
+
+获取代币持有者列表: 
+API返回错误: NOTOK
+cannot access local variable 'result' where it is not associated with a value
+已经从Excel中加载持币者！
+获取代币转账历史: 
+API返回错误: NOTOK
+cannot access local variable 'result' where it is not associated with a value
+已从excel中加载转账记录！
+计算持仓成本...
+计算后持币者前三：[HolderInfo(address='0x57F341572be3763791eDDba6C147fE75e4657b35', balance_raw=52537835, balance=52537835, percentage=0.5253784607497796, rank=1, first_seen_block=51032317, first_seen_time=datetime.datetime(2025, 6, 7, 18, 34, 53), last_tx_block=51032317, last_tx_time=datetime.datetime(2025, 6, 7, 18, 34, 53), tx_count=1, total_in=0.0, total_out=0, estimated_avg_cost=0.0, estimated_pnl=0.0, pnl_percentage=0.0, is_contract=False, tags=[]), HolderInfo(address='0xE4D2D26753A6bfC403860eF0d9026E13c96BA7bC', balance_raw=52209540, balance=52209540, percentage=0.5220955100577335, rank=2, first_seen_block=51068621, first_seen_time=datetime.datetime(2025, 6, 8, 9, 42, 35), last_tx_block=51273314, last_tx_time=datetime.datetime(2025, 6, 11, 23, 1, 4), tx_count=26, total_in=0.0, total_out=0.0, estimated_avg_cost=0.0, estimated_pnl=0.0, pnl_percentage=0.0, is_contract=False, tags=[]), HolderInfo(address='0x27c0fC1967cB5Df288C03231829f6aBDd56473aC', balance_raw=43784108, balance=43784108, percentage=0.4378411722969191, rank=3, first_seen_block=51032315, first_seen_time=datetime.datetime(2025, 6, 7, 18, 34, 50), last_tx_block=51032315, last_tx_time=datetime.datetime(2025, 6, 7, 18, 34, 50), tx_count=1, total_in=0.0, total_out=0, estimated_avg_cost=0.0, estimated_pnl=0.0, pnl_percentage=0.0, is_contract=False, tags=[])]
+正在获取流动性池子...
+正在加载智能合约&执行...
+abi：[{'inputs': [], 'name': 'token0', 'outputs': [{'internalType': 'address', 'name': '', 'type': 'address'}], 'stateMutability': 'view', 'type': 'function'}, {'inputs': [], 'name': 'token1', 'outputs': [{'internalType': 'address', 'name': '', 'type': 'address'}], 'stateMutability': 'view', 'type': 'function'}, {'inputs': [], 'name': 'fee', 'outputs': [{'internalType': 'uint24', 'name': '', 'type': 'uint24'}], 'stateMutability': 'view', 'type': 'function'}, {'inputs': [], 'name': 'liquidity', 'outputs': [{'internalType': 'uint128', 'name': '', 'type': 'uint128'}], 'stateMutability': 'view', 'type': 'function'}, {'inputs': [], 'name': 'slot0', 'outputs': [{'internalType': 'uint160', 'name': 'sqrtPriceX96', 'type': 'uint160'}, {'internalType': 'int24', 'name': 'tick', 'type': 'int24'}, {'internalType': 'uint16', 'name': 'observationIndex', 'type': 'uint16'}, {'internalType': 'uint16', 'name': 'observationCardinality', 'type': 'uint16'}, {'internalType': 'uint16', 'name': 'observationCardinalityNext', 'type': 'uint16'}, {'internalType': 'uint8', 'name': 'feeProtocol', 'type': 'uint8'}, {'internalType': 'bool', 'name': 'unlocked', 'type': 'bool'}], 'stateMutability': 'view', 'type': 'function'}]
+流动性池子：{'token0': '0x55d398326f99059fF775485246999027B3197955', 'token1': '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 'reserve0': '', 'fee': 3000, 'liquidity': 243773438911672017438575, 'sqrt_price_x96': 2573051601375594176300580773, 'tick': -68549, 'fee_protocol': 0, 'reserve1': '', 'total_supply': '', 'block_timestamp': ''}
+
+✅ 分析结果已存入共享内存
+✅ 分析结果已存入数据库！
+✅ 代币分析完成，耗时: 12.62秒
+代币分析完成: C language in blockchain (CLANG)
+总持币地址: 4,194
+总余额: 9,999,997,892.00 CLANG
+前10地址占比: 3.78%
+前50地址占比: 11.15%
+平均余额: 2,384,358.10
+
+🏆 前10大持币地址:
+  # 1 0x57F341572be3763791... 余额: 52,537,835.00 (0.53%)
+  # 2 0xE4D2D26753A6bfC403... 余额: 52,209,540.00 (0.52%)
+  # 3 0x27c0fC1967cB5Df288... 余额: 43,784,108.00 (0.44%)
+  # 4 0x6c7E1c0795f61584cf... 余额: 37,402,182.00 (0.37%)
+  # 5 0x8E6F8A747f2a4C76ae... 余额: 35,465,488.00 (0.35%)
+  # 6 0x05B3c9240FcE12De99... 余额: 35,214,602.00 (0.35%)
+  # 7 0x774261C8fb1A951035... 余额: 34,092,059.00 (0.34%)
+  # 8 0xDaAf40FD41203Bff0A... 余额: 31,341,601.00 (0.31%)
+  # 9 0xE7D5C9F07C69B5c6e4... 余额: 28,247,587.00 (0.28%)
+  #10 0xFe137FA23E36436Aca... 余额: 27,583,178.00 (0.28%)
+
+✅ 共享内存中有 7 个代币分析结果
+清理完成
+开始校验持币者: 
+你没有选择文件！
+开始校验持币者: 
+验证持币地址是否在列表中: D:/Study/SONGGUOPENG.Software/代币分析/额外地址：窗口文本-2025-06-07-18-41.txt
+读取地址文件: D:/Study/SONGGUOPENG.Software/代币分析/额外地址：窗口文本-2025-06-07-18-41.txt
+从文件中读取到 20001 个有效地址
+查询到 4194 个持币地址
+验证结果:
+  - 查询地址数: 4194
+  - 期望地址数: 20001
+  - 匹配地址数: 4189
+  - 匹配率: 99.88%
+  - 缺失地址数: 5
+  - 多余地址数: 15812
+缺失地址（按余额排序前10）:
+    1. 0xe4d2d26753a6bfc403860ef0d9026e13c96ba7bc - 余额: 52,209,540.0000 (0.5221%)
+    2. 0x41218ba5f936c014405df4c0c8701ce38c180244 - 余额: 4,010,606.0000 (0.0401%)
+    3. 0x51d5c96d6b34a7b56b94192a6ae6993b472b74b1 - 余额: 639,753.0000 (0.0064%)
+    4. 0x00000047bb99ea4d791bb749d970de71ee0b1a34 - 余额: 172,202.0000 (0.0017%)
+    5. 0xd45dd91df475bfd944335160f538c1a14888dc1c - 余额: 80,007.0000 (0.0008%)
+验证结果已存入共享内存.
+Missing地址：[{'address': '0xe4d2d26753a6bfc403860ef0d9026e13c96ba7bc', 'balance': 52209540, 'percentage': 0.5220955100577335, 'rank': 2, 'tx_count': 26, 'is_contract': False}, {'address': '0x41218ba5f936c014405df4c0c8701ce38c180244', 'balance': 4010606, 'percentage': 0.040106068454359226, 'rank': 601, 'tx_count': 2, 'is_contract': False}, {'address': '0x51d5c96d6b34a7b56b94192a6ae6993b472b74b1', 'balance': 639753, 'percentage': 0.006397531348599608, 'rank': 3370, 'tx_count': 2, 'is_contract': False}, {'address': '0x00000047bb99ea4d791bb749d970de71ee0b1a34', 'balance': 172202, 'percentage': 0.0017220203630018925, 'rank': 4170, 'tx_count': 14, 'is_contract': False}, {'address': '0xd45dd91df475bfd944335160f538c1a14888dc1c', 'balance': 80007, 'percentage': 0.0008000701686547916, 'rank': 4192, 'tx_count': 1, 'is_contract': False}]
+✅ 数据已导出到: CLANG_analysis_20260118_142858.csv
+正在写入 Word 文件...
+保存失败：'HolderInfo' object has no attribute 'get'
+Loading...
+持币者Excel保存成功！
+转账记录Excel保存成功！
+代币信息Excel保存成功！
+Loading...
+持币者Excel保存成功！
+流动性池子Excel保存成功！
+流动性池子Excel保存成功！
+代币资料Excel保存成功！
+
